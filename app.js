@@ -5,6 +5,10 @@ const port = 8080;
 
 var myUsers = ['Tom', 'Nick', 'Harry'];
 
+app.get('/', function(req, res){
+    res.send(myUsers);
+})
+
 app.get('/listUsers', function(req, res){
     res.send(myUsers);
 })
